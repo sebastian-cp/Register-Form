@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=StyleSheet href="../css/styles.css" type="text/css" media=screen>
+    <link rel=StyleSheet href="../css/container.css" type="text/css" media=screen>
+    <link rel=StyleSheet href="../css/register-form.css" type="text/css" media=screen>
+    <link rel="icon" href="../multimedia/logo.png">
+    <title>Krysset.cl Registration</title>
+
+<body>
+    <main>
+        <h1 class="pag">Registration
+        </h1>
+        <div class="container">
+            <div class="title">
+                <h2>Creat your account</h2>
+                <p class="subtitle">Enter your data, all are required</p>
+            </div>
+            <form action="" class="form" id="form">
+
+                <!-- Gruop: User -->
+                <div class="form__gruop" id="gruop__user">
+                    <label for="user" class="form__label">Username</label>
+                    <div class="form__gruop-input">
+                        <input type="text" class="form__input" name="user" id="user" placeholder="Krysset">
+                        <i class="form__validation-status fas fa-times-circle"></i>
+                    </div>
+                    <p class="form__input-error">The username must be 4 to 16 digits long and can only contain numbers, letters, and underscores.</p>
+                </div>
+
+                <!-- Gruop: Name -->
+                <div class="form__gruop" id="gruop__name">
+                    <label for="name" class="form__label">Name</label>
+                    <div class="form__gruop-input">
+                        <input type="text" class="form__input" name="name" id="name" placeholder="Sebastián">
+                        <i class="form__validation-status fas fa-times-circle"></i>
+                    </div>
+                    <p class="form__input-error">The name must have from 1 to 40 digits and can only contain letters and spaces, they can have accents.</p>
+                </div>
+
+
+                <!-- Gruop: Last Name -->
+                <div class="form__grupo" id="gruop__last_name">
+                    <label for="last_name" class="form__label">Last Name</label>
+                    <div class="form__gruop-input">
+                        <input type="text" class="form__input" name="last_name" id="last_name" placeholder="Cofré">
+                        <i class="form__validation-status fas fa-times-circle"></i>
+                    </div>
+                    <p class="form__input-error">The name must have from 1 to 40 digits and can only contain letters and spaces, they can have accents.</p>
+                </div>
+
+                <!-- Gruop: direction -->
+                <div class="form__grupo" id="gruop__direction">
+                    <label for="direction" class="form__label">Direction</label>
+                    <div class="form__gruop-input">
+                        <input type="text" class="form__input" name="direction" id="direction" placeholder="The Corales 8976">
+                        <i class="form__validation-status fas fa-times-circle"></i>
+                    </div>
+                    <p class="form__input-error">The address must be from 4 to 16 digits and can only contain letters and numbers.</p>
+                </div>
+
+                <!-- Gruop: Email -->
+                <div class="form__gruop" id="gruop__email">
+                    <label for="email" class="form__label">Email</label>
+                    <div class="form__gruop-input">
+                        <input type="email" class="form__input" name="email" id="email" placeholder="Seb123_go@email.com">
+                        <i class="form__validation-status fas fa-times-circle"></i>
+                    </div>
+                    <p class="form__input-error">The email can only contain letters, numbers, periods, hyphens and underscores.</p>
+                </div>
+
+                <!-- Gruop: Phone -->
+                <div class="form__gruop" id="gruop__phone">
+                    <label for="phone" class="form__label">Phone number</label>
+                    <div class="form__gruop-input">
+                        <input type="text" class="form__input" name="phone" id="phone" placeholder="+4491234567">
+                        <i class="form__validation-status fas fa-times-circle"></i>
+                    </div>
+                    <p class="form__input-error">The phone can only contain numbers and the maximum is 14 digits.</p>
+                </div>
+
+                <!-- Gruop: Password -->
+                <div class="form__gruop" id="gruop__password">
+                    <label for="password" class="form__label">Password</label>
+                    <div class="form__gruop-input">
+                        <input type="password" class="form__input" name="password" id="password">
+                        <i class="form__validation-status fas fa-times-circle"></i>
+                    </div>
+                    <p class="form__input-error">The password has to be 4 to 12 digits.</p>
+                </div>
+
+                <!-- Gruop: Password 2 -->
+                <div class="form__gruop" id="gruop__password2">
+                    <label for="password2" class="form__label">Repeat password</label>
+                    <div class="form__gruop-input">
+                        <input type="password" class="form__input" name="password2" id="password2">
+                        <i class="form__validation-status fas fa-times-circle"></i>
+                    </div>
+                    <p class="form__input-error">Both passwords must match.</p>
+                </div>
+
+                <!-- Gruop: Terms and Conditions -->
+                <div class="form__gruop" id="gruop__terms">
+                    <label class="form__label">
+                        <input class="form__checkbox" type="checkbox" name="terms" id="terms">
+                        I accept the terms and conditions
+                    </label>
+                </div>
+
+                <!-- Gruop: Buttons And Success Message -->
+                <div class="form__gruop form__gruop-btn">
+                    <button type="submit" class="form__btn">Submit</button>
+                    <p class="form__message-success" id="form__message-success">Form sent successfully!</p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="../js/register-form.js"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
